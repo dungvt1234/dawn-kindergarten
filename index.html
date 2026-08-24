@@ -3,38 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DAWN Kindergarten · Mầm non Bình Minh — Website đang xây dựng</title>
+<title>Mầm non Bình Minh · DAWN Kindergarten — Nơi mỗi ngày đến trường là một ngày hạnh phúc</title>
+<meta name="description" content="Mầm non Bình Minh (DAWN Kindergarten) — môi trường giáo dục sớm an toàn, yêu thương với chương trình Montessori, STEAM, giáo dục cảm xúc. Đăng ký tham quan ngay hôm nay.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/animations.css">
-<style>
-  .track-shell { max-width: 860px; margin-inline: auto; padding: 48px 16px 80px; }
-  .track-head { text-align: center; margin-bottom: 40px; }
-  .track-head img { width: 130px; margin-inline: auto; margin-bottom: 16px; }
-  .track-head h1 { font-size: 1.9rem; margin-bottom: 6px; }
-  .track-head p { color: var(--text-soft); margin: 0; }
-  .phase-card { display: flex; gap: 16px; align-items: flex-start; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--r-lg); padding: 20px 24px; margin-bottom: 14px; }
-  .phase-card__num { flex: 0 0 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; font-family: var(--font-head); font-weight: 800; font-size: 1.05rem; }
-  .phase-card--done .phase-card__num { background: var(--sage); color: #fff; }
-  .phase-card--doing .phase-card__num { background: var(--gold); color: #fff; }
-  .phase-card--todo .phase-card__num { background: var(--cream-soft); color: var(--text-faint); border: 1.5px solid var(--border); }
-  .phase-card__title { font-weight: 800; font-family: var(--font-head); margin-bottom: 2px; }
-  .phase-card__desc { font-size: var(--fs-sm); color: var(--text-soft); margin: 0; }
-  .phase-card__status { margin-left: auto; flex: 0 0 auto; }
-  .phase-card--done .phase-card__status { color: var(--sage-dark); font-weight: 700; font-size: var(--fs-xs); background: var(--sage-light); padding: 4px 10px; border-radius: 99px; }
-  .phase-card--doing .phase-card__status { color: #8A5A08; font-weight: 700; font-size: var(--fs-xs); background: #FBE3B8; padding: 4px 10px; border-radius: 99px; }
-  .phase-card--todo .phase-card__status { color: var(--text-faint); font-weight: 600; font-size: var(--fs-xs); background: var(--cream-soft); padding: 4px 10px; border-radius: 99px; }
-  .links { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 32px; }
-  .links a { display: flex; align-items: center; gap: 10px; }
-  .note { margin-top: 40px; background: var(--butter-light); border-radius: var(--r-md); padding: 16px 20px; font-size: var(--fs-sm); color: #6B5410; }
-</style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header class="header">
   <div class="header__inner container">
-    <a class="brand" href="/">
-      <img class="brand__logo" src="assets/img/logo.svg" alt="Logo">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo.svg" alt="Logo Mầm non Bình Minh">
       <span>
         <span class="brand__name">DAWN Kindergarten</span><br>
         <span class="brand__tag">Mầm non Bình Minh</span>
@@ -42,63 +27,476 @@
     </a>
     <nav class="nav" aria-label="Chính">
       <ul class="nav__list">
-        <li><a class="nav__link" href="/" aria-current="page">Tiến độ</a></li>
-        <li><a class="nav__link" href="design/component-library.html">Design System</a></li>
-        <li><a class="nav__link" href="docs/diagram-roadmap.html">Lộ trình</a></li>
+        <li><a class="nav__link" href="index.html" aria-current="page">Trang chủ</a></li>
+        <li><a class="nav__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+        <li><a class="nav__link" href="chuong-trinh.html">Chương trình</a></li>
+        <li><a class="nav__link" href="moi-truong.html">Môi trường</a></li>
+        <li><a class="nav__link" href="hoc-phi.html">Học phí</a></li>
+        <li><a class="nav__link" href="tuyen-sinh.html">Tuyển sinh</a></li>
+        <li><a class="nav__link" href="lien-he.html">Liên hệ</a></li>
       </ul>
     </nav>
+    <a class="btn btn--primary btn--sm header__cta" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
+    <button class="burger" aria-label="Mở menu" aria-expanded="false">
+      <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
-<div class="track-shell">
-  <div class="track-head">
-    <img src="assets/img/logo.svg" alt="Logo Mầm non Bình Minh">
-    <h1>🌱 Website đang xây dựng</h1>
-    <p>DAWN Kindergarten · Mầm non Bình Minh — theo dõi tiến độ từng phase tại đây</p>
-  </div>
-
-  <!-- PHASE 1 -->
-  <div class="phase-card phase-card--done">
-    <div class="phase-card__num">1</div>
-    <div>
-      <div class="phase-card__title">Brand &amp; Design System</div>
-      <p class="phase-card__desc">Bảng màu, typography, button, card, form, accordion, timeline, header/footer, logo SVG</p>
+<!-- ===== DRAWER (mobile) ===== -->
+<div class="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer__panel">
+    <button class="drawer__close" aria-label="Đóng menu">✕</button>
+    <nav aria-label="Di động">
+      <ul class="drawer__list">
+        <li class="drawer__item"><a class="drawer__link" href="index.html">Trang chủ</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="chuong-trinh.html">Chương trình học</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="moi-truong.html">Môi trường</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="hoat-dong.html">Hoạt động</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="dinh-duong.html">Dinh dưỡng</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="hoc-phi.html">Học phí</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="tuyen-sinh.html">Tuyển sinh</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="gallery.html">Thư viện ảnh</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="tin-tuc.html">Tin tức</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="faq.html">Câu hỏi thường gặp</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div style="margin-top:24px;">
+      <a class="btn btn--primary btn--block" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
     </div>
-    <span class="phase-card__status">✅ XONG</span>
-  </div>
-
-  <!-- PHASE 2 -->
-  <div class="phase-card phase-card--doing">
-    <div class="phase-card__num">2</div>
-    <div>
-      <div class="phase-card__title">Information Architecture</div>
-      <p class="phase-card__desc">Sitemap, URL, menu, robots.txt, sitemap.xml, favicon</p>
-    </div>
-    <span class="phase-card__status">⏳ ĐANG LÀM</span>
-  </div>
-
-  <!-- PHASE 3-11 -->
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">3</div><div><div class="phase-card__title">Homepage</div><p class="phase-card__desc">Hero, trust bar, chương trình, một ngày của bé, môi trường, an toàn, dinh dưỡng, đội ngũ, gallery, testimonial, học phí, tuyển sinh, FAQ, CTA</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">4</div><div><div class="phase-card__title">Core Pages</div><p class="phase-card__desc">Về chúng tôi · Chương trình · Môi trường · Hoạt động · Dinh dưỡng</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">5</div><div><div class="phase-card__title">Tuyển sinh · Học phí · FAQ</div><p class="phase-card__desc">Quy trình 6 bước, bảng học phí, FAQ accordion, form đăng ký tham quan</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">6</div><div><div class="phase-card__title">Gallery · Tin tức</div><p class="phase-card__desc">Bộ sưu tập ảnh + lightbox, tin tức + bài mẫu</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">7</div><div><div class="phase-card__title">Forms &amp; Conversion</div><p class="phase-card__desc">Validation form, tracking, sticky mobile CTA</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">8</div><div><div class="phase-card__title">SEO &amp; Local SEO</div><p class="phase-card__desc">Meta, Schema.org, sitemap, NAP nhất quán</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">9</div><div><div class="phase-card__title">Performance &amp; Accessibility</div><p class="phase-card__desc">WebP/AVIF, lazy loading, WCAG, Core Web Vitals</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">10</div><div><div class="phase-card__title">QA / Testing</div><p class="phase-card__desc">Checklist 50 mục — UI/UX/SEO/Perf/A11y/Security</p></div><span class="phase-card__status">CHỜ</span></div>
-  <div class="phase-card phase-card--todo"><div class="phase-card__num">11</div><div><div class="phase-card__title">Final Polish + Docs</div><p class="phase-card__desc">README, privacy policy, terms, 404</p></div><span class="phase-card__status">CHỜ</span></div>
-
-  <div class="links">
-    <a class="btn btn--primary" href="design/component-library.html">🎨 Xem Design System (Phase 1)</a>
-    <a class="btn btn--outline" href="docs/diagram-pyramid.html">🏔️ Sơ đồ 5 tầng</a>
-    <a class="btn btn--outline" href="docs/diagram-roadmap.html">🗺️ Sơ đồ lộ trình</a>
-    <a class="btn btn--ghost" href="docs/KE_HOACH_CHI_TIET.md">📄 Kế hoạch chi tiết</a>
-  </div>
-
-  <div class="note">
-    💡 <b>Ghi chú:</b> Logo SVG hiện tại là bản mô phỏng từ ảnh anh gửi — sẽ thay bằng file gốc khi anh cung cấp. Mọi nội dung [HOTLINE], [ĐỊA CHỈ], [EMAIL] là placeholder chờ anh điền thông tin thật.
   </div>
 </div>
 
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero--tint">
+    <div class="container">
+      <span class="badge badge--gold mb-4">🌅 Năm học 2026 — Tuyển sinh từ 12 tháng đến 6 tuổi</span>
+      <h1 class="hero__title">Nơi mỗi ngày đến trường <em>là một ngày hạnh phúc</em></h1>
+      <p class="hero__sub">Môi trường giáo dục sớm an toàn, yêu thương và khoa học — nơi con được tự do khám phá, lớn lên theo cách riêng của mình.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
+        <a class="btn btn--outline btn--lg" href="hoc-phi.html">XEM HỌC PHÍ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="section--tight" style="background:var(--white);border-bottom:1.5px solid var(--border);">
+    <div class="container">
+      <div class="trustbar">
+        <div class="trustbar__item">
+          <span class="trustbar__icon">💛</span>
+          <div><div class="trustbar__title">Yêu thương</div><div class="trustbar__desc">Cô trò gắn kết như gia đình</div></div>
+        </div>
+        <div class="trustbar__item">
+          <span class="trustbar__icon">🛡️</span>
+          <div><div class="trustbar__title">An toàn</div><div class="trustbar__desc">Camera, y tế, đón trả chuẩn</div></div>
+        </div>
+        <div class="trustbar__item">
+          <span class="trustbar__icon">🌱</span>
+          <div><div class="trustbar__title">Phát triển</div><div class="trustbar__desc">Montessori · STEAM · EQ</div></div>
+        </div>
+        <div class="trustbar__item">
+          <span class="trustbar__icon">🥗</span>
+          <div><div class="trustbar__title">Dinh dưỡng</div><div class="trustbar__desc">Thực đơn chuẩn 4 nhóm chất</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GIỚI THIỆU NGẮN + SỐ LIỆU ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <div class="section-head section-head--left mb-5">
+            <span class="section-head__eyebrow">Về chúng tôi</span>
+            <h2 class="section-head__title">Chào mừng đến với Mầm non Bình Minh</h2>
+            <p class="section-head__desc">Chúng tôi tin mỗi đứa trẻ là một mặt trời nhỏ — nhiệm vụ của nhà trường là đánh thức ánh sáng riêng của con bằng tình yêu thương, sự tôn trọng và phương pháp giáo dục khoa học.</p>
+          </div>
+          <p style="color:var(--text-soft);">Tại DAWN Kindergarten, con được học qua trải nghiệm, được chơi mà học, được lớn lên trong môi trường an toàn và đầy cảm hứng. Chúng tôi đồng hành cùng cha mẹ trong những năm tháng quan trọng nhất của tuổi thơ.</p>
+          <div class="mt-5">
+            <a class="btn btn--outline" href="ve-chung-toi.html">Tìm hiểu về chúng tôi →</a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/img/hero-1.jpg" alt="Trẻ em vui chơi tại trường mầm non" style="border-radius:var(--r-xl);box-shadow:var(--shadow-lg);aspect-ratio:4/3;object-fit:cover;width:100%;">
+        </div>
+      </div>
+      <div class="grid-4 mt-8" style="text-align:center;">
+        <div class="card card--tint-sage card--flat"><div style="font-family:var(--font-head);font-weight:800;font-size:2rem;color:var(--sage-dark);">[10]+</div><div style="font-size:var(--fs-sm);color:var(--text-soft);">Năm kinh nghiệm</div></div>
+        <div class="card card--tint-butter card--flat"><div style="font-family:var(--font-head);font-weight:800;font-size:2rem;color:#8A6A10;">[300]+</div><div style="font-size:var(--fs-sm);color:var(--text-soft);">Học sinh đã đồng hành</div></div>
+        <div class="card card--tint-peach card--flat"><div style="font-family:var(--font-head);font-weight:800;font-size:2rem;color:#A05A3C;">[20]+</div><div style="font-size:var(--fs-sm);color:var(--text-soft);">Giáo viên tận tâm</div></div>
+        <div class="card card--flat"><div style="font-family:var(--font-head);font-weight:800;font-size:2rem;color:var(--ink);">100%</div><div style="font-size:var(--fs-sm);color:var(--text-soft);">Yêu thương &amp; an toàn</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHƯƠNG TRÌNH GIÁO DỤC ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Chương trình giáo dục</span>
+        <h2 class="section-head__title">Phương pháp khoa học, trái tim ấm áp</h2>
+        <p class="section-head__desc">Chương trình được thiết kế để con phát triển toàn diện: trí tuệ, thể chất, cảm xúc và kỹ năng xã hội.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card__icon">🧩</div>
+          <h3 class="card__title">Montessori</h3>
+          <p class="card__text">Con tự khám phá theo nhịp riêng với giáo cụ trực quan, giáo viên là người định hướng và quan sát.</p>
+        </div>
+        <div class="card card--tint-sage reveal">
+          <div class="card__icon">🔬</div>
+          <h3 class="card__title">STEAM</h3>
+          <p class="card__text">Khoa học, công nghệ, kỹ thuật, nghệ thuật &amp; toán học qua các dự án thực hành thú vị.</p>
+        </div>
+        <div class="card card--tint-butter reveal">
+          <div class="card__icon">❤️</div>
+          <h3 class="card__title">Giáo dục cảm xúc (EQ)</h3>
+          <p class="card__text">Con nhận diện và điều tiết cảm xúc, xây nền tảng kỹ năng xã hội vững chắc.</p>
+        </div>
+        <div class="card card--tint-peach reveal">
+          <div class="card__icon">🤸</div>
+          <h3 class="card__title">Vận động</h3>
+          <p class="card__text">Phát triển thể chất qua vận động thô &amp; tinh, rèn sự tự tin và bền bỉ.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🎨</div>
+          <h3 class="card__title">Nghệ thuật</h3>
+          <p class="card__text">Âm nhạc, hội họa, múa hát — nuôi dưỡng cảm thụ thẩm mỹ và trí tưởng tượng.</p>
+        </div>
+        <div class="card card--tint-sage reveal">
+          <div class="card__icon">🌏</div>
+          <h3 class="card__title">Ngoại ngữ</h3>
+          <p class="card__text">Làm quen tiếng Anh qua trò chơi và bài hát, hình thành phản xạ ngôn ngữ tự nhiên.</p>
+        </div>
+      </div>
+      <div class="text-center mt-7">
+        <a class="btn btn--primary" href="chuong-trinh.html">Xem chi tiết chương trình</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MỘT NGÀY CỦA BÉ ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Một ngày của bé</span>
+        <h2 class="section-head__title">Con học gì mỗi ngày?</h2>
+        <p class="section-head__desc">Nhịp sinh hoạt khoa học, cân bằng giữa học tập, vui chơi và nghỉ ngơi.</p>
+      </div>
+      <div class="grid-2" style="align-items:start;">
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">06:30 — 08:00</div>
+            <div class="timeline__title">Đón trẻ &amp; vui chơi tự do</div>
+            <p class="timeline__desc">Cô đón bé, trò chuyện, chơi nhẹ nhàng đầu ngày.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">08:00 — 09:30</div>
+            <div class="timeline__title">Hoạt động học tập</div>
+            <p class="timeline__desc">Giờ học theo phương pháp Montessori / STEAM theo độ tuổi.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">09:30 — 10:30</div>
+            <div class="timeline__title">Vận động ngoài trời</div>
+            <p class="timeline__desc">Chạy nhảy, chơi cát nước, quan sát thiên nhiên.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">10:30 — 11:30</div>
+            <div class="timeline__title">Ăn trưa</div>
+            <p class="timeline__desc">Bữa ăn đủ chất, con tập tự phục vụ và giữ vệ sinh.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">11:45 — 14:00</div>
+            <div class="timeline__title">Ngủ trưa</div>
+            <p class="timeline__desc">Không gian yên tĩnh, thoáng mát, cô theo dõi giấc ngủ.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">14:00 — 16:30</div>
+            <div class="timeline__title">Bữa xế &amp; hoạt động chiều</div>
+            <p class="timeline__desc">Nghệ thuật, kể chuyện, chơi góc, ôn bài nhẹ nhàng.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">16:30 — 17:30</div>
+            <div class="timeline__title">Trả trẻ</div>
+            <p class="timeline__desc">Cô trao đổi tình hình trong ngày với phụ huynh.</p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/img/activity-2.jpg" alt="Hoạt động của bé tại trường" style="border-radius:var(--r-xl);box-shadow:var(--shadow-lg);aspect-ratio:4/3;object-fit:cover;width:100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÔI TRƯỜNG ===== -->
+  <section class="section section--sage">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Môi trường học tập</span>
+        <h2 class="section-head__title">Không gian xanh, sạch, truyền cảm hứng</h2>
+        <p class="section-head__desc">Mỗi góc nhỏ trong trường đều được thiết kế vì sự an toàn và phát triển của con.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card card--flat reveal" style="overflow:hidden;padding:0;">
+          <img src="assets/img/env-classroom.jpg" alt="Lớp học Montessori" style="aspect-ratio:16/10;object-fit:cover;width:100%;">
+          <div style="padding:var(--sp-5);">
+            <h3 class="card__title">Lớp học Montessori</h3>
+            <p class="card__text">Giáo cụ chuẩn, ánh sáng tự nhiên, bố trí khoa học theo từng độ tuổi.</p>
+          </div>
+        </div>
+        <div class="card card--flat reveal" style="overflow:hidden;padding:0;">
+          <img src="assets/img/env-playground.jpg" alt="Sân chơi ngoài trời" style="aspect-ratio:16/10;object-fit:cover;width:100%;">
+          <div style="padding:var(--sp-5);">
+            <h3 class="card__title">Sân chơi ngoài trời</h3>
+            <p class="card__text">Cầu trượt, khu cát nước, vườn rau — con được gần gũi thiên nhiên.</p>
+          </div>
+        </div>
+        <div class="card card--flat reveal" style="overflow:hidden;padding:0;">
+          <img src="assets/img/env-library.jpg" alt="Thư viện và góc đọc sách" style="aspect-ratio:16/10;object-fit:cover;width:100%;">
+          <div style="padding:var(--sp-5);">
+            <h3 class="card__title">Thư viện &amp; góc đọc sách</h3>
+            <p class="card__text">Hàng trăm đầu sách thiếu nhi, nuôi dưỡng tình yêu đọc sách từ nhỏ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-7">
+        <a class="btn btn--outline" href="moi-truong.html" style="background:var(--white);">Khám phá toàn bộ môi trường</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AN TOÀN ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">An toàn tuyệt đối</span>
+        <h2 class="section-head__title">Điều quan trọng nhất với chúng tôi</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card card--tint-sage card--flat reveal"><div class="card__icon">📹</div><h3 class="card__title">Camera giám sát</h3><p class="card__text">Hệ thống camera tại lớp và khu vực chung.</p></div>
+        <div class="card card--tint-butter card--flat reveal"><div class="card__icon">🧴</div><h3 class="card__title">Vệ sinh khử khuẩn</h3><p class="card__text">Quy trình vệ sinh hàng ngày, phòng dịch nghiêm ngặt.</p></div>
+        <div class="card card--tint-peach card--flat reveal"><div class="card__icon">🩺</div><h3 class="card__title">Y tế tại trường</h3><p class="card__text">Nhân viên y tế, sổ theo dõi sức khỏe, quy trình xử lý kịp thời.</p></div>
+        <div class="card card--flat reveal"><div class="card__icon">🔐</div><h3 class="card__title">Đón trả an toàn</h3><p class="card__text">Quy trình đón trả có kiểm soát, chỉ bàn giao đúng người ủy quyền.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DINH DƯỠNG ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <img src="assets/img/nutrition-1.jpg" alt="Bữa ăn dinh dưỡng của bé" style="border-radius:var(--r-xl);box-shadow:var(--shadow-lg);aspect-ratio:4/3;object-fit:cover;width:100%;">
+        </div>
+        <div>
+          <div class="section-head section-head--left mb-5">
+            <span class="section-head__eyebrow">Dinh dưỡng</span>
+            <h2 class="section-head__title">Ăn ngon, lớn khỏe mỗi ngày</h2>
+            <p class="section-head__desc">Thực đơn được xây dựng bởi chuyên gia dinh dưỡng, thay đổi theo tuần và theo mùa, đảm bảo đủ 4 nhóm chất.</p>
+          </div>
+          <ul style="list-style:none;display:grid;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:20px;">🥦</span><span><b>Nguồn thực phẩm sạch</b><br><small style="color:var(--text-soft);">Có kiểm soát nguồn gốc, giao nhận hàng ngày</small></span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:20px;">🍎</span><span><b>Thực đơn khoa học</b><br><small style="color:var(--text-soft);">Đủ 4 nhóm chất, bổ sung hoa quả theo mùa</small></span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="font-size:20px;">👩‍🍳</span><span><b>Bếp một chiều</b><br><small style="color:var(--text-soft);">Quy trình bếp chuẩn, an toàn vệ sinh thực phẩm</small></span></li>
+          </ul>
+          <div class="mt-5">
+            <a class="btn btn--outline" href="dinh-duong.html">Xem thực đơn mẫu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ĐỘI NGŨ ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Đội ngũ</span>
+        <h2 class="section-head__title">Những người đồng hành cùng con</h2>
+        <p class="section-head__desc">Đội ngũ giáo viên yêu trẻ, được đào tạo bài bản về giáo dục mầm non và các phương pháp hiện đại.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card card--flat text-center reveal" style="padding:var(--sp-6);">
+          <img src="assets/img/teacher-1.jpg" alt="Giáo viên mầm non" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0 auto var(--sp-4);">
+          <h3 class="card__title">[Cô giáo]</h3>
+          <p class="card__text">Hiệu trưởng — [mô tả ngắn sẽ cập nhật]</p>
+        </div>
+        <div class="card card--tint-sage card--flat text-center reveal" style="padding:var(--sp-6);">
+          <div style="width:120px;height:120px;border-radius:50%;background:var(--sage-light);display:grid;place-items:center;font-size:40px;margin:0 auto var(--sp-4);">👩‍🏫</div>
+          <h3 class="card__title">[Giáo viên]</h3>
+          <p class="card__text">Chuyên môn Montessori — [mô tả ngắn sẽ cập nhật]</p>
+        </div>
+        <div class="card card--tint-butter card--flat text-center reveal" style="padding:var(--sp-6);">
+          <div style="width:120px;height:120px;border-radius:50%;background:var(--butter-light);display:grid;place-items:center;font-size:40px;margin:0 auto var(--sp-4);">🧑‍🍳</div>
+          <h3 class="card__title">[Bếp &amp; y tế]</h3>
+          <p class="card__text">Chăm sóc sức khỏe &amp; dinh dưỡng — [mô tả ngắn sẽ cập nhật]</p>
+        </div>
+      </div>
+      <p class="text-center mt-4" style="font-size:var(--fs-xs);color:var(--text-faint);">* Hình ảnh minh họa — thông tin đội ngũ sẽ được cập nhật khi trường cung cấp.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY PREVIEW ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Thư viện ảnh</span>
+        <h2 class="section-head__title">Khoảnh khắc đáng yêu của con</h2>
+      </div>
+      <div class="gallery">
+        <a class="gallery__item" href="assets/img/gallery-1.jpg" data-lightbox="assets/img/gallery-1.jpg" data-caption="Giờ học vui nhộn"><img src="assets/img/gallery-1.jpg" alt="Giờ học của bé" loading="lazy"></a>
+        <a class="gallery__item" href="assets/img/gallery-2.jpg" data-lightbox="assets/img/gallery-2.jpg" data-caption="Con chơi cùng bạn"><img src="assets/img/gallery-2.jpg" alt="Bé chơi cùng bạn" loading="lazy"></a>
+        <a class="gallery__item" href="assets/img/gallery-3.jpg" data-lightbox="assets/img/gallery-3.jpg" data-caption="Hoạt động ngoài trời"><img src="assets/img/gallery-3.jpg" alt="Hoạt động ngoài trời" loading="lazy"></a>
+        <a class="gallery__item" href="assets/img/gallery-4.jpg" data-lightbox="assets/img/gallery-4.jpg" data-caption="Sáng tạo nghệ thuật"><img src="assets/img/gallery-4.jpg" alt="Sáng tạo nghệ thuật" loading="lazy"></a>
+      </div>
+      <div class="text-center mt-6">
+        <a class="btn btn--outline" href="gallery.html">Xem toàn bộ thư viện ảnh</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Phụ huynh nói gì</span>
+        <h2 class="section-head__title">Niềm tin từ những gia đình đã đồng hành</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div style="color:var(--gold);font-size:20px;margin-bottom:12px;">★★★★★</div>
+          <p class="card__text" style="font-style:italic;">"Con mình từ nhút nhát giờ tự tin hẳn, sáng nào cũng đòi đi học. Các cô chăm con như con của mình."</p>
+          <p class="mt-4" style="font-weight:700;font-size:var(--fs-sm);">[Chị — phụ huynh lớp Mẫu giáo bé]</p>
+        </div>
+        <div class="card card--tint-sage reveal">
+          <div style="color:var(--gold);font-size:20px;margin-bottom:12px;">★★★★★</div>
+          <p class="card__text" style="font-style:italic;">"Mình ấn tượng với chương trình Montessori — con học được tính tự lập và tập trung rất tốt."</p>
+          <p class="mt-4" style="font-weight:700;font-size:var(--fs-sm);">[Anh — phụ huynh lớp Mẫu giáo nhỡ]</p>
+        </div>
+        <div class="card card--tint-butter reveal">
+          <div style="color:var(--gold);font-size:20px;margin-bottom:12px;">★★★★★</div>
+          <p class="card__text" style="font-style:italic;">"Thực đơn thay đổi hàng tuần, con ăn ngon, tăng cân đều. Trường rất sạch sẽ và an toàn."</p>
+          <p class="mt-4" style="font-weight:700;font-size:var(--fs-sm);">[Chị — phụ huynh lớp Nhà trẻ]</p>
+        </div>
+      </div>
+      <p class="text-center mt-4" style="font-size:var(--fs-xs);color:var(--text-faint);">* Nội dung đánh giá mẫu — sẽ thay bằng phản hồi thật khi trường có.</p>
+    </div>
+  </section>
+
+  <!-- ===== HỌC PHÍ + TUYỂN SINH + FAQ TEASER ===== -->
+  <section class="section section--sage">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card card--flat reveal">
+          <span class="badge badge--gold mb-4">Học phí</span>
+          <h3 class="card__title">Minh bạch, không phát sinh</h3>
+          <p class="card__text">Bảng học phí chi tiết theo độ tuổi, công khai rõ ràng. Gọi ngay để nhận tư vấn phù hợp nhất cho gia đình.</p>
+          <div class="mt-5"><a class="btn btn--outline btn--sm" href="hoc-phi.html">Xem học phí</a></div>
+        </div>
+        <div class="card card--flat reveal">
+          <span class="badge badge--butter mb-4">Tuyển sinh</span>
+          <h3 class="card__title">4 bước đơn giản</h3>
+          <p class="card__text">Đăng ký → Tham quan &amp; tư vấn → Hoàn tất hồ sơ → Nhập học. Trường luôn sẵn sàng chào đón gia đình.</p>
+          <div class="mt-5"><a class="btn btn--outline btn--sm" href="tuyen-sinh.html">Xem quy trình</a></div>
+        </div>
+        <div class="card card--flat reveal">
+          <span class="badge badge--peach mb-4">Câu hỏi thường gặp</span>
+          <h3 class="card__title">Có gì thắc mắc?</h3>
+          <p class="card__text">Trường có camera không? Thực đơn thế nào? Con chưa quen trường thì sao? — Xem giải đáp tại đây.</p>
+          <div class="mt-5"><a class="btn btn--outline btn--sm" href="faq.html">Xem FAQ</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section text-center" style="background:linear-gradient(180deg,var(--cream) 0%,#FFF3DC 100%);">
+    <div class="container">
+      <h2 style="max-width:640px;margin:0 auto var(--sp-4);">Đặt lịch tham quan hôm nay —<br>tặng con một buổi trải nghiệm miễn phí 🌻</h2>
+      <p style="color:var(--text-soft);max-width:520px;margin:0 auto var(--sp-6);">Hãy để con tự cảm nhận ngôi trường — cha mẹ yên tâm nhìn tận mắt, nghe tận tai trước khi quyết định.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent btn--lg" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
+        <a class="btn btn--outline btn--lg" href="tel:[HOTLINE]">📞 GỌI [HOTLINE]</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4 class="footer__title">🌅 DAWN Kindergarten</h4>
+        <p class="footer__text">Mầm non Bình Minh — nơi mỗi ngày đến trường là một ngày hạnh phúc. Đồng hành cùng gia đình trong những năm tháng vàng của tuổi thơ.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Khám phá</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+          <li class="footer__item"><a class="footer__link" href="chuong-trinh.html">Chương trình học</a></li>
+          <li class="footer__item"><a class="footer__link" href="moi-truong.html">Môi trường</a></li>
+          <li class="footer__item"><a class="footer__link" href="hoat-dong.html">Hoạt động</a></li>
+          <li class="footer__item"><a class="footer__link" href="dinh-duong.html">Dinh dưỡng</a></li>
+          <li class="footer__item"><a class="footer__link" href="gallery.html">Thư viện ảnh</a></li>
+          <li class="footer__item"><a class="footer__link" href="tin-tuc.html">Tin tức</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Tuyển sinh</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="hoc-phi.html">Học phí</a></li>
+          <li class="footer__item"><a class="footer__link" href="tuyen-sinh.html">Quy trình tuyển sinh</a></li>
+          <li class="footer__item"><a class="footer__link" href="dang-ky-tham-quan.html">Đăng ký tham quan</a></li>
+          <li class="footer__item"><a class="footer__link" href="faq.html">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Liên hệ</h4>
+        <p class="footer__text">
+          📍 [ĐỊA CHỈ]<br>
+          📞 <a class="footer__link" href="tel:[HOTLINE]">[HOTLINE]</a><br>
+          ✉️ <a class="footer__link" href="mailto:[EMAIL]">[EMAIL]</a><br>
+          🕐 Thứ 2 — Chủ nhật: 06:30 — 17:30
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> DAWN Kindergarten · Mầm non Bình Minh</span>
+      <span><a class="footer__link" href="privacy-policy.html">Chính sách bảo mật</a> · <a class="footer__link" href="terms.html">Điều khoản</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA ===== -->
+<div class="sticky-cta">
+  <a class="sticky-cta__btn sticky-cta__btn--call" href="tel:[HOTLINE]">📞 Gọi ngay</a>
+  <a class="sticky-cta__btn sticky-cta__btn--zalo" href="https://zalo.me/[HOTLINE]">💬 Zalo</a>
+  <a class="sticky-cta__btn sticky-cta__btn--visit" href="dang-ky-tham-quan.html">🏫 Đăng ký tham quan</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <button class="lightbox__close" aria-label="Đóng">✕</button>
+  <img class="lightbox__img" src="" alt="">
+  <div class="lightbox__caption"></div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dawn-kindergarten.vercel.app/sitemap.xml

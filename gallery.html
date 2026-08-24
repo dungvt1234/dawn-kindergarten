@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thư viện ảnh — Mầm non Bình Minh · DAWN Kindergarten</title>
+<meta name="description" content="Thư viện ảnh Mầm non Bình Minh (DAWN Kindergarten) — khoảnh khắc học tập, vui chơi và trưởng thành của các bé tại trường.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<style>
+  .filter-row { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:var(--sp-6); }
+  .filter-btn { border:1.5px solid var(--border-strong); background:var(--white); color:var(--text-soft); font-family:var(--font-head); font-weight:700; font-size:var(--fs-xs); padding:8px 18px; border-radius:var(--r-full); cursor:pointer; transition:all var(--t-fast); }
+  .filter-btn:hover { border-color:var(--sage); color:var(--sage-dark); }
+  .filter-btn.is-active { background:var(--sage); border-color:var(--sage); color:#fff; }
+  .gallery-item { display:block; position:relative; border-radius:var(--r-md); overflow:hidden; aspect-ratio:4/3; background:var(--sage-light); text-decoration:none; }
+  .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform var(--t-base); }
+  .gallery-item:hover img { transform:scale(1.05); }
+  .gallery-item__tag { position:absolute; left:10px; top:10px; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner container">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo.svg" alt="Logo Mầm non Bình Minh">
+      <span>
+        <span class="brand__name">DAWN Kindergarten</span><br>
+        <span class="brand__tag">Mầm non Bình Minh</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Chính">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Trang chủ</a></li>
+        <li><a class="nav__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+        <li><a class="nav__link" href="chuong-trinh.html">Chương trình</a></li>
+        <li><a class="nav__link" href="moi-truong.html">Môi trường</a></li>
+        <li><a class="nav__link" href="hoc-phi.html">Học phí</a></li>
+        <li><a class="nav__link" href="tuyen-sinh.html">Tuyển sinh</a></li>
+        <li><a class="nav__link" href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header__cta" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
+    <button class="burger" aria-label="Mở menu" aria-expanded="false">
+      <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer__panel">
+    <button class="drawer__close" aria-label="Đóng menu">✕</button>
+    <nav aria-label="Di động">
+      <ul class="drawer__list">
+        <li class="drawer__item"><a class="drawer__link" href="index.html">Trang chủ</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="chuong-trinh.html">Chương trình học</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="moi-truong.html">Môi trường</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="hoat-dong.html">Hoạt động</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="dinh-duong.html">Dinh dưỡng</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="hoc-phi.html">Học phí</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="tuyen-sinh.html">Tuyển sinh</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="gallery.html">Thư viện ảnh</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="tin-tuc.html">Tin tức</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="faq.html">Câu hỏi thường gặp</a></li>
+        <li class="drawer__item"><a class="drawer__link" href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div style="margin-top:24px;">
+      <a class="btn btn--primary btn--block" href="dang-ky-tham-quan.html">ĐĂNG KÝ THAM QUAN</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb"><ol class="crumb" style="justify-content:center;margin-bottom:var(--sp-3);"><li><a href="index.html">Trang chủ</a></li><li>Thư viện ảnh</li></ol></nav>
+      <h1 class="page-hero__title">Thư viện ảnh</h1>
+      <p class="page-hero__crumb">Những khoảnh khắc đáng yêu của con tại Mầm non Bình Minh</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-row" role="group" aria-label="Lọc ảnh theo chủ đề">
+        <button class="filter-btn is-active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="hoc">Học tập</button>
+        <button class="filter-btn" data-filter="choi">Vui chơi</button>
+        <button class="filter-btn" data-filter="nghethuat">Nghệ thuật</button>
+        <button class="filter-btn" data-filter="moitruong">Môi trường</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <a class="gallery-item" href="assets/img/gallery-1.jpg" data-lightbox="assets/img/gallery-1.jpg" data-caption="Giờ học vui nhộn" data-cat="hoc">
+          <img src="assets/img/gallery-1.jpg" alt="Giờ học của bé" loading="lazy">
+          <span class="badge badge--butter gallery-item__tag">Học tập</span>
+        </a>
+        <a class="gallery-item" href="assets/img/gallery-2.jpg" data-lightbox="assets/img/gallery-2.jpg" data-caption="Con chơi cùng bạn" data-cat="choi">
+          <img src="assets/img/gallery-2.jpg" alt="Bé chơi cùng bạn" loading="lazy">
+          <span class="badge badge--peach gallery-item__tag">Vui chơi</span>
+        </a>
+        <a class="gallery-item" href="assets/img/gallery-3.jpg" data-lightbox="assets/img/gallery-3.jpg" data-caption="Hoạt động ngoài trời" data-cat="choi">
+          <img src="assets/img/gallery-3.jpg" alt="Hoạt động ngoài trời" loading="lazy">
+          <span class="badge badge--gold gallery-item__tag">Vui chơi</span>
+        </a>
+        <a class="gallery-item" href="assets/img/gallery-4.jpg" data-lightbox="assets/img/gallery-4.jpg" data-caption="Sáng tạo nghệ thuật" data-cat="nghethuat">
+          <img src="assets/img/gallery-4.jpg" alt="Sáng tạo nghệ thuật" loading="lazy">
+          <span class="badge badge--peach gallery-item__tag">Nghệ thuật</span>
+        </a>
+        <a class="gallery-item" href="assets/img/gallery-5.jpg" data-lightbox="assets/img/gallery-5.jpg" data-caption="Bé tập trung khám phá" data-cat="hoc">
+          <img src="assets/img/gallery-5.jpg" alt="Bé khám phá giáo cụ" loading="lazy">
+          <span class="badge badge--butter gallery-item__tag">Học tập</span>
+        </a>
+        <a class="gallery-item" href="assets/img/gallery-6.jpg" data-lightbox="assets/img/gallery-6.jpg" data-caption="Niềm vui đến trường" data-cat="choi">
+          <img src="assets/img/gallery-6.jpg" alt="Niềm vui đến trường" loading="lazy">
+          <span class="badge badge--gold gallery-item__tag">Vui chơi</span>
+        </a>
+        <a class="gallery-item" href="assets/img/activity-1.jpg" data-lightbox="assets/img/activity-1.jpg" data-caption="Bé làm vườn" data-cat="moitruong">
+          <img src="assets/img/activity-1.jpg" alt="Bé làm vườn" loading="lazy">
+          <span class="badge badge--butter gallery-item__tag">Môi trường</span>
+        </a>
+        <a class="gallery-item" href="assets/img/activity-2.jpg" data-lightbox="assets/img/activity-2.jpg" data-caption="Dã ngoại cùng lớp" data-cat="choi">
+          <img src="assets/img/activity-2.jpg" alt="Dã ngoại cùng lớp" loading="lazy">
+          <span class="badge badge--peach gallery-item__tag">Vui chơi</span>
+        </a>
+        <a class="gallery-item" href="assets/img/program-art.jpg" data-lightbox="assets/img/program-art.jpg" data-caption="Lớp vẽ và thủ công" data-cat="nghethuat">
+          <img src="assets/img/program-art.jpg" alt="Lớp vẽ và thủ công" loading="lazy">
+          <span class="badge badge--gold gallery-item__tag">Nghệ thuật</span>
+        </a>
+        <a class="gallery-item" href="assets/img/env-playground.jpg" data-lightbox="assets/img/env-playground.jpg" data-caption="Sân chơi ngoài trời" data-cat="moitruong">
+          <img src="assets/img/env-playground.jpg" alt="Sân chơi ngoài trời" loading="lazy">
+          <span class="badge badge--butter gallery-item__tag">Môi trường</span>
+        </a>
+        <a class="gallery-item" href="assets/img/env-library.jpg" data-lightbox="assets/img/env-library.jpg" data-caption="Góc đọc sách" data-cat="moitruong">
+          <img src="assets/img/env-library.jpg" alt="Góc đọc sách" loading="lazy">
+          <span class="badge badge--peach gallery-item__tag">Môi trường</span>
+        </a>
+        <a class="gallery-item" href="assets/img/hero-1.jpg" data-lightbox="assets/img/hero-1.jpg" data-caption="Khoảnh khắc hạnh phúc" data-cat="choi">
+          <img src="assets/img/hero-1.jpg" alt="Khoảnh khắc hạnh phúc" loading="lazy">
+          <span class="badge badge--gold gallery-item__tag">Vui chơi</span>
+        </a>
+      </div>
+
+      <p class="text-center mt-6" style="font-size:var(--fs-xs);color:var(--text-faint);">* Ảnh minh họa — sẽ thay bằng ảnh thật của trường khi có sự đồng ý của phụ huynh.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4 class="footer__title">🌅 DAWN Kindergarten</h4>
+        <p class="footer__text">Mầm non Bình Minh — nơi mỗi ngày đến trường là một ngày hạnh phúc. Đồng hành cùng gia đình trong những năm tháng vàng của tuổi thơ.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Khám phá</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="ve-chung-toi.html">Về chúng tôi</a></li>
+          <li class="footer__item"><a class="footer__link" href="chuong-trinh.html">Chương trình học</a></li>
+          <li class="footer__item"><a class="footer__link" href="moi-truong.html">Môi trường</a></li>
+          <li class="footer__item"><a class="footer__link" href="hoat-dong.html">Hoạt động</a></li>
+          <li class="footer__item"><a class="footer__link" href="dinh-duong.html">Dinh dưỡng</a></li>
+          <li class="footer__item"><a class="footer__link" href="gallery.html">Thư viện ảnh</a></li>
+          <li class="footer__item"><a class="footer__link" href="tin-tuc.html">Tin tức</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Tuyển sinh</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="hoc-phi.html">Học phí</a></li>
+          <li class="footer__item"><a class="footer__link" href="tuyen-sinh.html">Quy trình tuyển sinh</a></li>
+          <li class="footer__item"><a class="footer__link" href="dang-ky-tham-quan.html">Đăng ký tham quan</a></li>
+          <li class="footer__item"><a class="footer__link" href="faq.html">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Liên hệ</h4>
+        <p class="footer__text">
+          📍 [ĐỊA CHỈ]<br>
+          📞 <a class="footer__link" href="tel:[HOTLINE]">[HOTLINE]</a><br>
+          ✉️ <a class="footer__link" href="mailto:[EMAIL]">[EMAIL]</a><br>
+          🕐 Thứ 2 — Chủ nhật: 06:30 — 17:30
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> DAWN Kindergarten · Mầm non Bình Minh</span>
+      <span><a class="footer__link" href="privacy-policy.html">Chính sách bảo mật</a> · <a class="footer__link" href="terms.html">Điều khoản</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="sticky-cta__btn sticky-cta__btn--call" href="tel:[HOTLINE]">📞 Gọi ngay</a>
+  <a class="sticky-cta__btn sticky-cta__btn--zalo" href="https://zalo.me/[HOTLINE]">💬 Zalo</a>
+  <a class="sticky-cta__btn sticky-cta__btn--visit" href="dang-ky-tham-quan.html">🏫 Đăng ký tham quan</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <button class="lightbox__close" aria-label="Đóng">✕</button>
+  <img class="lightbox__img" src="" alt="">
+  <div class="lightbox__caption"></div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script>
+  (function () {
+    var btns = document.querySelectorAll('.filter-btn');
+    var items = document.querySelectorAll('.gallery-item');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        var f = btn.getAttribute('data-filter');
+        items.forEach(function (item) {
+          var cat = item.getAttribute('data-cat');
+          item.style.display = (f === 'all' || cat === f) ? 'block' : 'none';
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -20,6 +20,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', app: 'dawn-kindergarten', time: new Date().toISOString() });
 });
 
+// 404 fallback
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, '404.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`🌅 DAWN Kindergarten website running at http://localhost:${PORT}`);
 });
