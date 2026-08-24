@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 1 · Design System — Mầm non Bình Minh</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<link rel="stylesheet" href="../assets/css/animations.css">
+<style>
+  /* Demo layout — tạm thời, không thuộc design system */
+  .demo-shell { padding: 32px 16px 96px; max-width: 1100px; margin-inline: auto; }
+  .demo-title { font-size: 1.75rem; margin-bottom: 4px; }
+  .demo-sub { color: var(--text-faint); font-size: 0.9rem; margin-bottom: 32px; }
+  .demo-block { background: var(--white); border: 1.5px dashed var(--border-strong); border-radius: 20px; padding: 28px; margin-bottom: 28px; }
+  .demo-block__title { font-size: 1.05rem; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .demo-block__title span { background: var(--sage-light); color: var(--sage-dark); font-size: 0.72rem; padding: 3px 10px; border-radius: 99px; letter-spacing: 1px; }
+  .demo-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 10px; }
+  .demo-swatch { width: 96px; height: 96px; border-radius: 16px; border: 1.5px solid var(--border); display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; font-size: 0.68rem; font-weight: 700; }
+  .demo-swatch small { font-weight: 500; opacity: 0.75; }
+  .demo-card { max-width: 300px; }
+  .demo-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .badge-row { display: flex; flex-wrap: wrap; gap: 8px; }
+</style>
+</head>
+<body>
+
+<div class="demo-shell">
+  <h1 class="demo-title">🌈 Phase 1 — Design System</h1>
+  <p class="demo-sub">Mầm non Bình Minh · DAWN Kindergarten — Component Library (bản thử nghiệm, chờ anh duyệt)</p>
+
+  <!-- ===== TOKENS: MÀU ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>TOKENS</span> Bảng màu</div>
+    <div class="demo-row">
+      <div class="demo-swatch" style="background:#FFF9F0;color:#34423A;">Cream<br><small>#FFF9F0</small></div>
+      <div class="demo-swatch" style="background:#8FAF8B;color:#fff;">Sage<br><small>#8FAF8B</small></div>
+      <div class="demo-swatch" style="background:#6E8F6A;color:#fff;">Sage Dark<br><small>#6E8F6A</small></div>
+      <div class="demo-swatch" style="background:#F6D77A;color:#34423A;">Butter<br><small>#F6D77A</small></div>
+      <div class="demo-swatch" style="background:#F3B59F;color:#34423A;">Peach<br><small>#F3B59F</small></div>
+      <div class="demo-swatch" style="background:#F0B040;color:#fff;">Gold (logo)<br><small>#F0B040</small></div>
+      <div class="demo-swatch" style="background:#34423A;color:#fff;">Ink<br><small>#34423A</small></div>
+      <div class="demo-swatch" style="background:#301030;color:#fff;">Ink Violet (logo)<br><small>#301030</small></div>
+    </div>
+  </div>
+
+  <!-- ===== LOGO ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>BRAND</span> Logo (bản SVG mô phỏng — chờ anh xác nhận icon)</div>
+    <div class="demo-row">
+      <img src="../assets/img/logo.svg" alt="Logo Mầm non Bình Minh" style="width:200px;">
+      <div style="font-size:0.85rem;color:var(--text-soft);max-width:340px;">
+        Bản SVG em dựng từ phân tích logo anh gửi: mặt trời mọc vàng cam + 2 dòng chữ.
+        <b>Anh xác nhận giúp em icon gốc là gì</b> để em chỉnh lại cho chuẩn, hoặc gửi file logo PNG nền trong suốt/SVG để dùng luôn.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BUTTONS ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>COMPONENT</span> Button — 4 level + kích thước</div>
+    <div class="demo-row">
+      <a href="#" class="btn btn--primary">ĐĂNG KÝ THAM QUAN</a>
+      <a href="#" class="btn btn--accent">Gọi ngay</a>
+      <a href="#" class="btn btn--outline">Xem học phí</a>
+      <a href="#" class="btn btn--ghost">Tìm hiểu thêm</a>
+      <a href="#" class="btn btn--white">Button trắng</a>
+    </div>
+    <div class="demo-row">
+      <a href="#" class="btn btn--primary btn--lg">Button lớn</a>
+      <a href="#" class="btn btn--primary">Button vừa</a>
+      <a href="#" class="btn btn--primary btn--sm">Button nhỏ</a>
+      <button class="btn btn--primary" disabled>Disabled</button>
+    </div>
+  </div>
+
+  <!-- ===== CARDS ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>COMPONENT</span> Card — 4 kiểu</div>
+    <div class="demo-grid">
+      <div class="card">
+        <div class="card__icon">🧩</div>
+        <h4 class="card__title">Montessori</h4>
+        <p class="card__text">Trẻ tự khám phá theo nhịp riêng với giáo cụ trực quan, giáo viên là người định hướng.</p>
+      </div>
+      <div class="card card--tint-sage">
+        <div class="card__icon">🎨</div>
+        <h4 class="card__title">STEAM</h4>
+        <p class="card__text">Khoa học, công nghệ, kỹ thuật, nghệ thuật và toán học qua dự án thực hành.</p>
+      </div>
+      <div class="card card--tint-butter">
+        <div class="card__icon">❤️</div>
+        <h4 class="card__title">Cảm xúc EQ</h4>
+        <p class="card__text">Nhận diện &amp; điều tiết cảm xúc, xây nền tảng kỹ năng xã hội vững chắc.</p>
+      </div>
+      <div class="card card--tint-peach">
+        <div class="card__icon">🤸</div>
+        <h4 class="card__title">Vận động</h4>
+        <p class="card__text">Phát triển thể chất qua vận động thô &amp; tinh, rèn sự tự tin và bền bỉ.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION HEAD + BADGE ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>COMPONENT</span> Section header + Badge</div>
+    <div class="section-head" style="margin-bottom:20px;">
+      <span class="section-head__eyebrow">Chương trình giáo dục</span>
+      <h2 class="section-head__title">Phương pháp khoa học, trái tim ấm áp</h2>
+      <p class="section-head__desc">Mỗi đứa trẻ là một mặt trời nhỏ — chúng tôi chỉ cần đánh thức ánh sáng riêng của con.</p>
+    </div>
+    <div class="badge-row">
+      <span class="badge">Badge sage</span>
+      <span class="badge badge--butter">Badge butter</span>
+      <span class="badge badge--peach">Badge peach</span>
+      <span class="badge badge--gold">Badge gold</span>
+      <span class="badge badge--outline">Badge outline</span>
+    </div>
+  </div>
+
+  <!-- ===== FORM ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>COMPONENT</span> Form field</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+      <div class="field">
+        <label class="field__label" for="demo-name">Họ tên phụ huynh <span class="req">*</span></label>
+        <input class="field__input" id="demo-name" type="text" placeholder="Nguyễn Văn A">
+        <p class="field__hint">Họ và tên đầy đủ</p>
+      </div>
+      <div class="field">
+        <label class="field__label" for="demo-phone">Số điện thoại <span class="req">*</span></label>
+        <input class="field__input" id="demo-phone" type="tel" placeholder="0909 123 456">
+      </div>
+      <div class="field">
+        <label class="field__label" for="demo-select">Chương trình quan tâm</label>
+        <select class="field__select" id="demo-select">
+          <option>Nhà trẻ (12-24 tháng)</option>
+          <option>Mẫu giáo bé (3-4 tuổi)</option>
+          <option>Mẫu giáo nhỡ (4-5 tuổi)</option>
+          <option>Mẫu giáo lớn (5-6 tuổi)</option>
+        </select>
+      </div>
+      <div class="field field--invalid">
+        <label class="field__label" for="demo-err">Ví dụ lỗi</label>
+        <input class="field__input" id="demo-err" type="text" value="abc">
+        <p class="field__error">Số điện thoại không hợp lệ</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACCORDION + TIMELINE ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>COMPONENT</span> Accordion + Timeline</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
+      <div>
+        <details class="accordion" open>
+          <summary class="accordion__head">Trường có camera cho phụ huynh xem không? <span class="accordion__icon">＋</span></summary>
+          <div class="accordion__body">Có — hệ thống camera được bố trí tại các khu vực chung và lớp học, phụ huynh xem qua ứng dụng theo chính sách riêng của trường.</div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__head">Thực đơn có thay đổi theo tuần không? <span class="accordion__icon">＋</span></summary>
+          <div class="accordion__body">Thực đơn thay đổi theo tuần, theo mùa, đảm bảo đủ 4 nhóm chất và được công bố công khai.</div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__head">Trường có đón trẻ thứ 7 không? <span class="accordion__icon">＋</span></summary>
+          <div class="accordion__body">Nội dung mẫu — trường sẽ cập nhật theo chính sách thực tế.</div>
+        </details>
+      </div>
+      <div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">06:30 — 08:00</div>
+            <div class="timeline__title">Đón trẻ &amp; vui chơi tự do</div>
+            <p class="timeline__desc">Cô đón bé, trò chuyện, chơi nhẹ nhàng đầu ngày.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">08:00 — 09:30</div>
+            <div class="timeline__title">Hoạt động học tập</div>
+            <p class="timeline__desc">Giờ học theo phương pháp Montessori / STEAM.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__time">09:30 — 10:30</div>
+            <div class="timeline__title">Vận động ngoài trời</div>
+            <p class="timeline__desc">Chạy nhảy, chơi cát nước, quan sát thiên nhiên.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER + FOOTER PREVIEW ===== -->
+  <div class="demo-block">
+    <div class="demo-block__title"><span>LAYOUT</span> Header + Footer (preview nhỏ)</div>
+    <header class="header" style="position:static;border-radius:16px;margin-bottom:16px;">
+      <div class="header__inner container">
+        <a class="brand" href="#">
+          <img class="brand__logo" src="../assets/img/logo.svg" alt="Logo">
+          <span>
+            <span class="brand__name">DAWN Kindergarten</span><br>
+            <span class="brand__tag">Mầm non Bình Minh</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Chính">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#">Trang chủ</a></li>
+            <li><a class="nav__link" href="#">Chương trình</a></li>
+            <li><a class="nav__link" href="#">Môi trường</a></li>
+            <li><a class="nav__link" href="#">Tuyển sinh</a></li>
+            <li><a class="nav__link" href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--primary btn--sm header__cta" href="#">ĐĂNG KÝ THAM QUAN</a>
+      </div>
+    </header>
+    <footer class="footer" style="border-radius:16px;">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h4 class="footer__title">DAWN Kindergarten</h4>
+            <p class="footer__text">Mầm non Bình Minh — nơi mỗi ngày đến trường là một ngày hạnh phúc.</p>
+          </div>
+          <div>
+            <h4 class="footer__title">Khám phá</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Về chúng tôi</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Chương trình</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Tin tức</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__title">Tuyển sinh</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Học phí</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Đăng ký tham quan</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__title">Liên hệ</h4>
+            <p class="footer__text">[ĐỊA CHỈ]<br>[HOTLINE]<br>[EMAIL]</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 DAWN Kindergarten · Mầm non Bình Minh</span>
+          <span>Chính sách bảo mật · Điều khoản</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAWN Kindergarten · Mầm non Bình Minh — Website đang xây dựng</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<style>
+  .track-shell { max-width: 860px; margin-inline: auto; padding: 48px 16px 80px; }
+  .track-head { text-align: center; margin-bottom: 40px; }
+  .track-head img { width: 130px; margin-inline: auto; margin-bottom: 16px; }
+  .track-head h1 { font-size: 1.9rem; margin-bottom: 6px; }
+  .track-head p { color: var(--text-soft); margin: 0; }
+  .phase-card { display: flex; gap: 16px; align-items: flex-start; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--r-lg); padding: 20px 24px; margin-bottom: 14px; }
+  .phase-card__num { flex: 0 0 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; font-family: var(--font-head); font-weight: 800; font-size: 1.05rem; }
+  .phase-card--done .phase-card__num { background: var(--sage); color: #fff; }
+  .phase-card--doing .phase-card__num { background: var(--gold); color: #fff; }
+  .phase-card--todo .phase-card__num { background: var(--cream-soft); color: var(--text-faint); border: 1.5px solid var(--border); }
+  .phase-card__title { font-weight: 800; font-family: var(--font-head); margin-bottom: 2px; }
+  .phase-card__desc { font-size: var(--fs-sm); color: var(--text-soft); margin: 0; }
+  .phase-card__status { margin-left: auto; flex: 0 0 auto; }
+  .phase-card--done .phase-card__status { color: var(--sage-dark); font-weight: 700; font-size: var(--fs-xs); background: var(--sage-light); padding: 4px 10px; border-radius: 99px; }
+  .phase-card--doing .phase-card__status { color: #8A5A08; font-weight: 700; font-size: var(--fs-xs); background: #FBE3B8; padding: 4px 10px; border-radius: 99px; }
+  .phase-card--todo .phase-card__status { color: var(--text-faint); font-weight: 600; font-size: var(--fs-xs); background: var(--cream-soft); padding: 4px 10px; border-radius: 99px; }
+  .links { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 32px; }
+  .links a { display: flex; align-items: center; gap: 10px; }
+  .note { margin-top: 40px; background: var(--butter-light); border-radius: var(--r-md); padding: 16px 20px; font-size: var(--fs-sm); color: #6B5410; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner container">
+    <a class="brand" href="/">
+      <img class="brand__logo" src="assets/img/logo.svg" alt="Logo">
+      <span>
+        <span class="brand__name">DAWN Kindergarten</span><br>
+        <span class="brand__tag">Mầm non Bình Minh</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Chính">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="/" aria-current="page">Tiến độ</a></li>
+        <li><a class="nav__link" href="design/component-library.html">Design System</a></li>
+        <li><a class="nav__link" href="docs/diagram-roadmap.html">Lộ trình</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="track-shell">
+  <div class="track-head">
+    <img src="assets/img/logo.svg" alt="Logo Mầm non Bình Minh">
+    <h1>🌱 Website đang xây dựng</h1>
+    <p>DAWN Kindergarten · Mầm non Bình Minh — theo dõi tiến độ từng phase tại đây</p>
+  </div>
+
+  <!-- PHASE 1 -->
+  <div class="phase-card phase-card--done">
+    <div class="phase-card__num">1</div>
+    <div>
+      <div class="phase-card__title">Brand &amp; Design System</div>
+      <p class="phase-card__desc">Bảng màu, typography, button, card, form, accordion, timeline, header/footer, logo SVG</p>
+    </div>
+    <span class="phase-card__status">✅ XONG</span>
+  </div>
+
+  <!-- PHASE 2 -->
+  <div class="phase-card phase-card--doing">
+    <div class="phase-card__num">2</div>
+    <div>
+      <div class="phase-card__title">Information Architecture</div>
+      <p class="phase-card__desc">Sitemap, URL, menu, robots.txt, sitemap.xml, favicon</p>
+    </div>
+    <span class="phase-card__status">⏳ ĐANG LÀM</span>
+  </div>
+
+  <!-- PHASE 3-11 -->
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">3</div><div><div class="phase-card__title">Homepage</div><p class="phase-card__desc">Hero, trust bar, chương trình, một ngày của bé, môi trường, an toàn, dinh dưỡng, đội ngũ, gallery, testimonial, học phí, tuyển sinh, FAQ, CTA</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">4</div><div><div class="phase-card__title">Core Pages</div><p class="phase-card__desc">Về chúng tôi · Chương trình · Môi trường · Hoạt động · Dinh dưỡng</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">5</div><div><div class="phase-card__title">Tuyển sinh · Học phí · FAQ</div><p class="phase-card__desc">Quy trình 6 bước, bảng học phí, FAQ accordion, form đăng ký tham quan</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">6</div><div><div class="phase-card__title">Gallery · Tin tức</div><p class="phase-card__desc">Bộ sưu tập ảnh + lightbox, tin tức + bài mẫu</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">7</div><div><div class="phase-card__title">Forms &amp; Conversion</div><p class="phase-card__desc">Validation form, tracking, sticky mobile CTA</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">8</div><div><div class="phase-card__title">SEO &amp; Local SEO</div><p class="phase-card__desc">Meta, Schema.org, sitemap, NAP nhất quán</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">9</div><div><div class="phase-card__title">Performance &amp; Accessibility</div><p class="phase-card__desc">WebP/AVIF, lazy loading, WCAG, Core Web Vitals</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">10</div><div><div class="phase-card__title">QA / Testing</div><p class="phase-card__desc">Checklist 50 mục — UI/UX/SEO/Perf/A11y/Security</p></div><span class="phase-card__status">CHỜ</span></div>
+  <div class="phase-card phase-card--todo"><div class="phase-card__num">11</div><div><div class="phase-card__title">Final Polish + Docs</div><p class="phase-card__desc">README, privacy policy, terms, 404</p></div><span class="phase-card__status">CHỜ</span></div>
+
+  <div class="links">
+    <a class="btn btn--primary" href="design/component-library.html">🎨 Xem Design System (Phase 1)</a>
+    <a class="btn btn--outline" href="docs/diagram-pyramid.html">🏔️ Sơ đồ 5 tầng</a>
+    <a class="btn btn--outline" href="docs/diagram-roadmap.html">🗺️ Sơ đồ lộ trình</a>
+    <a class="btn btn--ghost" href="docs/KE_HOACH_CHI_TIET.md">📄 Kế hoạch chi tiết</a>
+  </div>
+
+  <div class="note">
+    💡 <b>Ghi chú:</b> Logo SVG hiện tại là bản mô phỏng từ ảnh anh gửi — sẽ thay bằng file gốc khi anh cung cấp. Mọi nội dung [HOTLINE], [ĐỊA CHỈ], [EMAIL] là placeholder chờ anh điền thông tin thật.
+  </div>
+</div>
+
+</body>
+</html>

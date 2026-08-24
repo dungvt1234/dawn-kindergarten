@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Sơ đồ 5 tầng - Website Mầm non</title>
+<style>
+  body{margin:0;background:#FFF9F0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;display:flex;justify-content:center;padding:32px 16px;}
+  .wrap{max-width:1060px;width:100%;}
+  h1{font-size:28px;color:#34423A;text-align:center;margin:0 0 6px;}
+  .sub{font-size:15px;color:#6F766F;text-align:center;margin:0 0 4px;}
+  .note{font-size:13px;color:#8A918A;text-align:center;margin:0 0 20px;}
+  svg{width:100%;height:auto;display:block;}
+  .tier-title{font-weight:700;font-size:20px;fill:#34423A;}
+  .tier-q{font-size:13.5px;fill:#4A554B;}
+  .tier-pages{font-size:12.5px;fill:#4A554B;}
+  .tier-num{font-weight:800;font-size:15px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🏔️ Mô hình 5 tầng — Website Mầm non Tư thục</h1>
+  <p class="sub">Trust Pyramid: phụ huynh chỉ đăng ký tham quan khi đã <b>hiểu giá trị</b> và <b>tin tưởng</b> nhà trường</p>
+  <p class="note">Mỗi trang/section của website phải phục vụ đúng 1 trong 5 tầng này — trang nào không phục vụ thì không đưa vào</p>
+  <svg viewBox="0 0 1000 1130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tháp 5 tầng website mầm non">
+    <!-- connector: mũi tên hành trình bên trái -->
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8FAF8B"/>
+      </marker>
+    </defs>
+    <!-- path hành trình -->
+    <path d="M 60 1060 L 60 100" fill="none" stroke="#8FAF8B" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+    <text x="60" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#8FAF8B">HÀNH TRÌNH<br/>PHỤ HUYNH</text>
+
+    <!-- TẦNG 5 - Chuyển đổi (đỉnh) -->
+    <polygon points="390,60 610,60 590,230 410,230" fill="#8FAF8B"/>
+    <text class="tier-num" x="420" y="115" fill="#FFFFFF">TẦNG 5</text>
+    <text class="tier-title" x="420" y="142" fill="#FFFFFF">CHUYỂN ĐỔI</text>
+    <text class="tier-q" x="420" y="168" fill="#F3F7F1">“Tôi muốn đến tham quan”</text>
+    <text class="tier-pages" x="420" y="196" fill="#F3F7F1">Đăng ký tham quan · Gọi / Zalo · Sticky CTA · Contact</text>
+
+    <!-- TẦNG 4 - Tuyển sinh -->
+    <polygon points="330,250 670,250 650,430 350,430" fill="#A9C4A0"/>
+    <text class="tier-num" x="365" y="305" fill="#FFFFFF">TẦNG 4</text>
+    <text class="tier-title" x="365" y="332" fill="#FFFFFF">TUYỂN SINH</text>
+    <text class="tier-q" x="365" y="358" fill="#F3F7F1">“Học phí, quy trình, điều kiện?”</text>
+    <text class="tier-pages" x="365" y="386" fill="#F3F7F1">hoc-phi · tuyen-sinh · faq</text>
+
+    <!-- TẦNG 3 - Bằng chứng -->
+    <polygon points="270,450 730,450 710,630 290,630" fill="#C3D6BA"/>
+    <text class="tier-num" x="305" y="505" fill="#34423A">TẦNG 3</text>
+    <text class="tier-title" x="305" y="532" fill="#34423A">BẰNG CHỨNG</text>
+    <text class="tier-q" x="305" y="558" fill="#4A554B">“Tại sao tôi nên tin trường?”</text>
+    <text class="tier-pages" x="305" y="586" fill="#4A554B">An toàn · Gallery · Đội ngũ · Cơ sở vật chất · Đánh giá PH (nội dung mẫu)</text>
+
+    <!-- TẦNG 2 - Giá trị -->
+    <polygon points="210,650 790,650 770,830 230,830" fill="#DCE8D5"/>
+    <text class="tier-num" x="245" y="705" fill="#34423A">TẦNG 2</text>
+    <text class="tier-title" x="245" y="732" fill="#34423A">GIÁ TRỊ</text>
+    <text class="tier-q" x="245" y="758" fill="#4A554B">“Trẻ học &amp; được chăm sóc thế nào?”</text>
+    <text class="tier-pages" x="245" y="786" fill="#4A554B">chuong-trinh · Một ngày của bé · moi-truong · hoat-dong · dinh-duong</text>
+
+    <!-- TẦNG 1 - Thương hiệu (đáy) -->
+    <polygon points="150,850 850,850 830,1030 170,1030" fill="#F4E9D2"/>
+    <text class="tier-num" x="185" y="905" fill="#34423A">TẦNG 1</text>
+    <text class="tier-title" x="185" y="932" fill="#34423A">THƯƠNG HIỆU</text>
+    <text class="tier-q" x="185" y="958" fill="#4A554B">“Trường là ai?”</text>
+    <text class="tier-pages" x="185" y="986" fill="#4A554B">Trang chủ (hero) · ve-chung-toi · Sứ mệnh · Giá trị cốt lõi</text>
+
+    <!-- Legend -->
+    <rect x="150" y="1065" width="700" height="44" rx="12" fill="#FFFFFF" stroke="#E8E4D9"/>
+    <text x="170" y="1092" font-size="13" fill="#6F766F">⬆ Hành trình phụ huynh: <tspan font-weight="700" fill="#34423A">Biết → Hiểu → Tin → Quyết định → Hành động</tspan></text>
+  </svg>
+</div>
+</body>
+</html>

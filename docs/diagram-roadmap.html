@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Roadmap 11 Phases - Website Mầm non</title>
+<style>
+  body{margin:0;background:#FFF9F0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;display:flex;justify-content:center;padding:32px 16px;}
+  .wrap{max-width:1080px;width:100%;}
+  h1{font-size:28px;color:#34423A;text-align:center;margin:0 0 6px;}
+  .sub{font-size:15px;color:#6F766F;text-align:center;margin:0 0 28px;}
+  .phase{display:flex;gap:16px;align-items:stretch;margin-bottom:0;position:relative;}
+  .badge{flex:0 0 130px;background:#8FAF8B;color:#fff;border-radius:18px 18px 4px 18px;padding:14px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center;}
+  .badge .n{font-size:12px;font-weight:700;letter-spacing:1px;opacity:.85;}
+  .badge .t{font-size:14px;font-weight:800;line-height:1.25;margin-top:4px;}
+  .body{flex:1;background:#fff;border:1.5px solid #E8E4D9;border-radius:18px;padding:14px 18px;}
+  .body .title{font-size:16px;font-weight:800;color:#34423A;margin:0 0 4px;}
+  .body .desc{font-size:13.5px;color:#4A554B;margin:0 0 6px;line-height:1.5;}
+  .body .out{font-size:12.5px;color:#6F766F;margin:0;}
+  .body .out b{color:#8FAF8B;}
+  .arrow{width:2px;height:26px;background:#C3D6BA;margin:2px 0 2px 64px;position:relative;}
+  .arrow::after{content:'';position:absolute;bottom:-1px;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid #C3D6BA;}
+  .group{font-size:13px;font-weight:800;color:#6F766F;letter-spacing:2px;margin:26px 0 10px;text-transform:uppercase;}
+  .group:first-of-type{margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🗺️ Lộ trình triển khai — 11 Phase</h1>
+  <p class="sub">Theo đúng thứ tự Master Prompt V2 (mục 62) · Mỗi phase xong → anh duyệt → làm phase tiếp</p>
+
+  <div class="group">Giai đoạn 1 · Nền tảng</div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 1</span><span class="t">BRAND &amp; DESIGN SYSTEM</span></div>
+    <div class="body">
+      <p class="title">Thương hiệu + Hệ thống thiết kế</p>
+      <p class="desc">Logo concept (minimal organic warm) · Màu: Cream #FFF9F0, Sage #8FAF8B, Butter #F6D77A, Peach #F3B59F · Typography: Be Vietnam Pro / Plus Jakarta Sans · Spacing 4-8-12-16-24-32-48-64-80-96-120 · Components: Button, Card, Input, Header, Footer, SectionHeader…</p>
+      <p class="out"><b>Deliverable:</b> assets/css/style.css · responsive.css · animations.css · design tokens</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 2</span><span class="t">INFORMATION ARCHITECTURE</span></div>
+    <div class="body">
+      <p class="title">Cấu trúc thông tin + SEO URL</p>
+      <p class="desc">Sitemap 12+ trang (index, ve-chung-toi, chuong-trinh, moi-truong, hoat-dong, dinh-duong, hoc-phi, tuyen-sinh, gallery, tin-tuc, lien-he, faq) · URL tiếng Việt chuẩn SEO · Navigation phản ánh hành trình phụ huynh · Breadcrumbs · NAP nhất quán</p>
+      <p class="out"><b>Deliverable:</b> robots.txt · sitemap.xml · favicon · menu hoàn chỉnh</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="group">Giai đoạn 2 · Trang chủ &amp; Trang cốt lõi</div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 3</span><span class="t">HOMEPAGE</span></div>
+    <div class="body">
+      <p class="title">Trang chủ — ấn tượng trong 5-10 giây đầu</p>
+      <p class="desc">Hero (headline + 2 CTA) · Trust bar (Yêu thương/An toàn/Phát triển/Dinh dưỡng) · Giới thiệu ngắn · Chương trình giáo dục · Một ngày của bé (timeline) · Môi trường · An toàn · Dinh dưỡng · Đội ngũ · Gallery preview · Testimonial (đánh dấu mẫu) · Học phí teaser · Tuyển sinh · FAQ teaser · Final CTA</p>
+      <p class="out"><b>Deliverable:</b> index.html hoàn chỉnh (theo đúng 20+ section Master Prompt)</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 4</span><span class="t">CORE PAGES</span></div>
+    <div class="body">
+      <p class="title">5 trang nội dung chính</p>
+      <p class="desc">ve-chung-toi (câu chuyện, sứ mệnh, giá trị) · chuong-trinh (Montessori/STEAM/Cảm xúc/Vận động/Nghệ thuật/Ngoại ngữ — card kèm lợi ích) · moi-truong (8 khu: lớp học, sân chơi, vận động, sáng tạo, thư viện, phòng ăn, phòng ngủ, vệ sinh) · hoat-dong · dinh-duong (thực đơn, quy trình bếp, dinh dưỡng)</p>
+      <p class="out"><b>Deliverable:</b> 5 trang HTML hoàn chỉnh + internal links</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="group">Giai đoạn 3 · Chuyển đổi</div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 5</span><span class="t">TUYỂN SINH · HỌC PHÍ · FAQ</span></div>
+    <div class="body">
+      <p class="title">3 trang quyết định + form đăng ký tham quan</p>
+      <p class="desc">hoc-phi (công khai hoặc form nhận bảng giá — KHÔNG bịa giá) · tuyen-sinh (6 bước: Đăng ký → Xác nhận lịch → Tham quan → Tư vấn → Hoàn tất hồ sơ → Nhập học) · faq (10 câu accordion + FAQPage schema) · dang-ky-tham-quan (form đầy đủ)</p>
+      <p class="out"><b>Deliverable:</b> 3 trang + form đăng ký + FAQ accordion</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 6</span><span class="t">GALLERY · TIN TỨC</span></div>
+    <div class="body">
+      <p class="title">Bằng chứng hình ảnh + nội dung SEO</p>
+      <p class="desc">gallery (grid/masonry + lightbox + lazy loading) · tin-tuc (danh sách bài viết) · 2-3 bài mẫu chuẩn SEO (URL thân thiện, title, description, author, related posts)</p>
+      <p class="out"><b>Deliverable:</b> gallery.html · tin-tuc.html · news/bai-viet-*.html</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 7</span><span class="t">FORMS &amp; CONVERSION</span></div>
+    <div class="body">
+      <p class="title">Thu lead + tracking</p>
+      <p class="desc">form.js: validation, error, loading, success, failure · Analytics hooks (data-attributes: CTA click, phone click, Zalo click, map click, form submit) · Sticky mobile CTA [Gọi] [Zalo] [Tham quan]</p>
+      <p class="out"><b>Deliverable:</b> assets/js/form.js · main.js · analytics-ready structure</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="group">Giai đoạn 4 · SEO &amp; Chất lượng</div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 8</span><span class="t">SEO &amp; LOCAL SEO</span></div>
+    <div class="body">
+      <p class="title">Lên top Google + khu vực</p>
+      <p class="desc">Meta title/description/H1 duy nhất mỗi trang · canonical · Open Graph · Schema.org (EducationalOrganization, LocalBusiness, Article, FAQPage, BreadcrumbList) · NAP nhất quán · nội dung local thật (không spam, không bịa)</p>
+      <p class="out"><b>Deliverable:</b> toàn bộ meta + schema + sitemap + robots</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 9</span><span class="t">PERFORMANCE &amp; ACCESSIBILITY</span></div>
+    <div class="body">
+      <p class="title">Nhanh + Ai cũng dùng được</p>
+      <p class="desc">Core Web Vitals (LCP, CLS, INP) · Ảnh WebP/AVIF, srcset, lazy loading, preload hero · defer JS · WCAG: semantic HTML, keyboard, focus, contrast, aria-label, prefers-reduced-motion</p>
+      <p class="out"><b>Deliverable:</b> ảnh tối ưu · code tối ưu · pass accessibility cơ bản</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 10</span><span class="t">QA / TESTING</span></div>
+    <div class="body">
+      <p class="title">Kiểm tra toàn diện 50 mục</p>
+      <p class="desc">UI (không vỡ layout, không overflow, không ảnh méo) · UX (mọi menu/CTA/form/gallery/lightbox/mobile menu hoạt động) · SEO · Performance · Accessibility · Security (validation, sanitization, không lộ secret)</p>
+      <p class="out"><b>Deliverable:</b> Checklist nghiệm thu đầy đủ (Master Prompt mục 50)</p>
+    </div>
+  </div>
+  <div class="arrow"></div>
+
+  <div class="group">Giai đoạn 5 · Hoàn thiện</div>
+
+  <div class="phase">
+    <div class="badge"><span class="n">PHASE 11</span><span class="t">FINAL POLISH + DOCS</span></div>
+    <div class="body">
+      <p class="title">Bàn giao + tài liệu hướng dẫn</p>
+      <p class="desc">README.md (hướng dẫn chạy, thay logo, thay ảnh, thay thông tin trường, thay màu, thay nội dung, deploy) · privacy-policy.html · terms.html · 404.html · Checklist nghiệm thu cuối</p>
+      <p class="out"><b>Deliverable:</b> Website hoàn chỉnh + tài liệu bàn giao</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
