@@ -1,0 +1,8 @@
+.git
+node_modules
+.gitignore
+*.log
+server.js
+package.json
+package-lock.json
+vercel.json
