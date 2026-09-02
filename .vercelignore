@@ -1,8 +1,4 @@
-.git
-node_modules
-.gitignore
+node_modules/
+assets/img.bak/
 *.log
-server.js
-package.json
-package-lock.json
-vercel.json
+.DS_Store
