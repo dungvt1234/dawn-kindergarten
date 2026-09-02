@@ -1,3 +1,30 @@
 User-agent: *
 Allow: /
-Sitemap: https://dawn-kindergarten.vercel.app/sitemap.xml
+
+# Sitemap
+Sitemap: https://binhminhkindergarten.site/sitemap.xml
+
+# AI Search Bots - allow for better AI citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap location
+Sitemap: https://binhminhkindergarten.site/sitemap.xml
