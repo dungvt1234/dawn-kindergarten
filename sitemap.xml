@@ -2,116 +2,117 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://binhminhkindergarten.site/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/index.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/ve-chung-toi.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/chuong-trinh.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://binhminhkindergarten.site/ve-chung-toi.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://binhminhkindergarten.site/moi-truong.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/hoat-dong.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/dinh-duong.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/hoc-phi.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/tuyen-sinh.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/gallery.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/tin-tuc.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/lien-he.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://binhminhkindergarten.site/faq.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://binhminhkindergarten.site/dang-ky-tham-quan.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://binhminhkindergarten.site/privacy-policy.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://binhminhkindergarten.site/tuyen-sinh.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://binhminhkindergarten.site/terms.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://binhminhkindergarten.site/news/bai-viet-mam-non-binh-minh-khai-giang-nam-hoc-2026.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://binhminhkindergarten.site/cau-hoi.html</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://binhminhkindergarten.site/news/bai-viet-7-ky-nang-tu-lap-cho-tre-mam-non.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://binhminhkindergarten.site/tin-tuc.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://binhminhkindergarten.site/gallery.html</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <!-- News Articles -->
+  <url>
+    <loc>https://binhminhkindergarten.site/news/montessori-vs-truyen-thong.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://binhminhkindergarten.site/news/bai-viet-vi-sao-phuong-phap-montessori-duoc-yeu-thich.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://binhminhkindergarten.site/news/bai-viet-5-loi-ich-vang-cua-phuong-phap-montessori-voi-tre-mam-non.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://binhminhkindergarten.site/news/bai-viet-7-ky-nang-tu-lap-cho-tre-mam-non.html</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://binhminhkindergarten.site/news/bai-viet-5-tieu-chi-vang-chon-truong-mam-non-tot-tai-vung-tau.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://binhminhkindergarten.site/news/bai-viet-mam-non-binh-minh-khai-giang-nam-hoc-2026.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
